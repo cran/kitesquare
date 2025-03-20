@@ -6,8 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="John Wiedenhöft">
-<meta name="dcterms.date" content="2025-03-13">
+<meta name="dcterms.date" content="2025-03-19">
 
 <title>Kite-Square Plots for Contingency Tables</title>
 <style>
@@ -131,13 +130,13 @@ window.Quarto = {
 <style type="text/css">body {background-color: #fff;margin: 1em auto;max-width: 700px;overflow: visible;padding-left: 2em;padding-right: 2em;font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 14px;line-height: 1.35;}table {margin: 1em auto;border-width: 1px;border-color: #DDDDDD;border-style: outset;border-collapse: collapse;}table th {border-width: 2px;padding: 5px;border-style: inset;}table td {border-width: 1px;border-style: inset;line-height: 18px;padding: 5px 5px;}table, table th, table td {border-left-style: none;border-right-style: none;}table thead, table tr.even {background-color: #f7f7f7;}p {margin: 0.5em 0;}blockquote {background-color: #f6f6f6;padding: 0.25em 0.75em;}hr {border-style: solid;border: none;border-top: 1px solid #777;margin: 28px 0;}dl {margin-left: 0;}dl dd {margin-bottom: 13px;margin-left: 13px;}dl dt {font-weight: bold;}ul {margin-top: 0;}ul li {list-style: circle outside;}ul ul {margin-bottom: 0;}pre, code {background-color: #f7f7f7;border-radius: 3px;color: #333;white-space: pre-wrap; }pre {border-radius: 3px;margin: 5px 0px 10px 0px;padding: 10px;}pre:not([class]) {background-color: #f7f7f7;}code {font-family: Consolas, Monaco, 'Courier New', monospace;font-size: 85%;}p > code, li > code {padding: 2px 0px;}div.figure {text-align: center;}img {background-color: #FFFFFF;padding: 2px;border: 1px solid #DDDDDD;border-radius: 3px;border: 1px solid #CCCCCC;margin: 0 5px;}h1 {margin-top: 0;font-size: 35px;line-height: 40px;}h2 {border-bottom: 4px solid #f7f7f7;padding-top: 10px;padding-bottom: 2px;font-size: 145%;}h3 {border-bottom: 2px solid #f7f7f7;padding-top: 10px;font-size: 120%;}h4 {border-bottom: 1px solid #f7f7f7;margin-left: 8px;font-size: 105%;}h5, h6 {border-bottom: 1px solid #ccc;font-size: 105%;}a {color: #0033dd;text-decoration: none;}a:hover {color: #6666ff; }a:visited {color: #800080; }a:visited:hover {color: #BB00BB; }a[href^="http:"] {text-decoration: underline; }a[href^="https:"] {text-decoration: underline; }</style>
 <meta name="citation_title" content="Kite-Square Plots for Contingency Tables">
 <meta name="citation_author" content="John Wiedenhöft">
-<meta name="citation_publication_date" content="2025-03-13">
-<meta name="citation_cover_date" content="2025-03-13">
+<meta name="citation_publication_date" content="2025-03-19">
+<meta name="citation_cover_date" content="2025-03-19">
 <meta name="citation_year" content="2025">
-<meta name="citation_online_date" content="2025-03-13">
-<meta name="citation_fulltext_html_url" content="https://github.com/HUGLeipzig/kitesquare">
+<meta name="citation_online_date" content="2025-03-19">
+<meta name="citation_fulltext_html_url" content="https://cran.r-project.org/package=kitesquare">
 <meta name="citation_language" content="en">
-<meta name="citation_reference" content="citation_title=Kite-Square Plots for Contingency Tables;,citation_author=John Wiedenhöft;,citation_publication_date=2025-01-22;,citation_cover_date=2025-01-22;,citation_year=2025;,citation_fulltext_html_url=https://github.com/HUGLeipzig/kitesquare;,citation_language=en;">
+<meta name="citation_reference" content="citation_title=kitesquare: Visualize Contingency Tables Using Kite-Square Plots;,citation_author=John Wiedenhöft;,citation_publication_date=2025-03-17;,citation_cover_date=2025-03-17;,citation_year=2025;,citation_fulltext_html_url=https://cran.r-project.org/package=kitesquare;,citation_language=en;">
 </head>
 
 <body>
@@ -145,9 +144,9 @@ window.Quarto = {
 
 <header id="title-block-header">
 <h1 class="title">Kite-Square Plots for Contingency Tables</h1>
-<p class="author">John Wiedenhöft</p>
+<p class="author">true</p>
 
-<p class="date">2025-03-13</p>
+<p class="date">2025-03-19</p>
 </header>
 
 <nav id="TOC" role="doc-toc">
@@ -202,7 +201,7 @@ Figure 1: Kite-square plots for independent and dependent variables.
 </figcaption>
 </figure>
 </div>
-<p>The R package <code>kitesquare</code> implements these plots using <code>ggplot2</code>. It is available at <a href="https://github.com/HUGLeipzig/kitesquare" class="uri">https://github.com/HUGLeipzig/kitesquare</a>.</p>
+<p>The R package <code>kitesquare</code> implements these plots using <code>ggplot2</code>. It is available at <a href="https://cran.r-project.org/package=kitesquare" class="uri">https://cran.r-project.org/package=kitesquare</a> as well as <a href="https://github.com/HUGLeipzig/kitesquare" class="uri">https://github.com/HUGLeipzig/kitesquare</a>.</p>
 <h2 id="introduction">Introduction</h2>
 <p>The relationship between two categorical random variables, say <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, is often displayed in the form of a <strong>contingency table</strong> (also known as a 2x2 table if both variables are binary). If the joint probability distribution is known, such a table comes in <strong>normalized</strong> form, with values between 0 and 1 (probabilities). Usually, these tables come in an <strong>unnormalized</strong> form, containing observed counts for different combinations of values, from which the probabilities are estimated as fractions.</p>
 <p>From either form, a number of interesting and statistically relevant quantities can be computed (<a href="#tbl-quantities" class="quarto-xref">Table 1</a>).</p>
@@ -368,18 +367,21 @@ Figure 4: Additional plot elements.
 </figure>
 </div>
 <p>Note that the axis labels are colored according to the bars with which they are associated. For clarity, kite-square plots have a colored point at the <strong>intersections</strong> of bars and axes, representing marginal probabilities/counts (<a href="#fig-itspatch-1" class="quarto-xref">Figure 4 (a)</a>); notice that the intersections for <span class="math inline">\(X\)</span> sit on the bars for <span class="math inline">\(Y\)</span> and vice versa (<a href="#fig-dependence" class="quarto-xref">Figure 1</a>).</p>
-<p>Intuitively, the discrepancy between the square and the bars provides a measure of association between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. It turns out that the area of the <strong>patches</strong> (<a href="#fig-itspatch-2" class="quarto-xref">Figure 4 (b)</a>) representing that discrepancy is <strong>equal to <span class="math inline">\(N\chi^2\)</span> for unnormalized and <span class="math inline">\(\frac{\chi^2}{N}\)</span> for normalized data</strong>. This is because for</p>
+<p>Intuitively, the discrepancy between the square and the bars provides a measure of association between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. It turns out that the area of the <strong>patches</strong> (<a href="#fig-itspatch-2" class="quarto-xref">Figure 4 (b)</a>) representing that discrepancy is equal to <span class="math inline">\(N\chi^2\)</span> for unnormalized and <span class="math inline">\(\frac{\chi^2}{N}\)</span> for normalized data. This is because for</p>
 <p><span class="math display">\[
 \chi^2 := \sum_{\substack{X\in\{A,B\}\\Y\in\{U,V\}}}\chi^2_{XY}   
-\]</span> with <span class="math display">\[
+\]</span> with</p>
+<p><span class="math display">\[
 \chi^2_{XY} := \frac{(E_{XY}-O_{XY})^2}{E_{XY}}
-\]</span> we have <span class="math display">\[
+\]</span> we have</p>
+<p><span class="math display">\[
 \chi^2_{XY}=    \frac{(N\mathbb{P}(X)\mathbb{P}(Y) - N\mathbb{P}(X,Y) )^2}{N\mathbb{P}(X)\mathbb{P}(Y)}
 \]</span> <span class="math display">\[
 =  \frac{N^2}{N} \frac{(\mathbb{P}(X)\mathbb{P}(Y) - \mathbb{P}(X,Y) )^2}{\mathbb{P}(X)\mathbb{P}(Y)}
 \]</span> <span class="math display">\[
 = N \frac{\left(\strut\mathbb{P}(X)-\mathbb{P}(X|Y)\right)\mathbb{P}(Y)   \left(\strut\mathbb{P}(Y)-\mathbb{P}(Y|X)\right)\mathbb{P}(X)}{\mathbb{P}(X)\mathbb{P}(Y)}
-\]</span> and hence <span class="math display">\[
+\]</span> and hence</p>
+<p><span class="math display">\[
 \chi^2_{XY} = N  \left(\strut\mathbb{P}(X)-\mathbb{P}(X|Y)\right)\left(\strut\mathbb{P}(Y)-\mathbb{P}(Y|X)\right)
 \]</span> In other words, the edges of each patch represent the difference between a expected (marginal) and observed conditional, and the area represents the contribution of each cell to the total <span class="math inline">\(\chi^2\)</span>. The larger the patches, the higher the degree of statistical dependency between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</p>
 <h2 id="usage">Usage</h2>
@@ -503,7 +505,7 @@ Table 2: Contingency tables with counts for variables <span class="math inline"
 <li><code>center_y</code></li>
 <li><code>center</code></li>
 </ul>
-<p>control whether (<a href="#fig-centered" class="quarto-xref">Figure 5</a>) or not (<a href="#fig-noncentered" class="quarto-xref">Figure 6</a>) centering should be performed for binary <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span> or both. For larger non-centered plots, it is sometimes helpful to <strong>fill</strong> the space between bars and their associated axis using</p>
+<p>control whether (<a href="#fig-centered" class="quarto-xref">Figure 5</a>) or not (<a href="#fig-noncentered" class="quarto-xref">Figure 6</a>) centering should be performed for binary <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span> or both. For larger non-centered plots, it is sometimes helpful to <strong>fill</strong> the space between bars and their associated axis (an area representing <span class="math inline">\(\mathbb{P}(X,Y)\)</span>) using</p>
 <ul>
 <li><code>fill_x</code></li>
 <li><code>fill_y</code></li>
